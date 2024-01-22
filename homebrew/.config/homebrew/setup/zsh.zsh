@@ -31,12 +31,10 @@ else
 fi
 
 
-# zsh-completions Caveats
-if ! brewexists zsh-completions; then
-  echo 'zsh-completions not installed with homebrew'
-elif false; then # TODO: is_configured validation statement
-  echo 'zsh-completions installed and configured'
-else
-  echo 'set permissions for /usr/local/share/zsh (needs sudo)'
-  chmod -R go-w '/usr/local/share/zsh'
-fi
+for omz_plugin in zsh-completions zsh-autosuggestions zsh-syntax-highlighting
+do
+  FOLDER=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$omz_plugin
+  if [ ! -d "$FOLDER" ] ; then
+    git clone https://github.com/zsh-users/$omz_plugin.git "$FOLDER"
+  fi
+done

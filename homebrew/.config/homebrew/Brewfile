@@ -26,8 +26,6 @@ brew "stow"
 brew "tmux"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Additional completion definitions for zsh
-brew "zsh-completions"
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser

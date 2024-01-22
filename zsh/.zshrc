@@ -72,10 +72,16 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    zsh-completions
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
+# command for zsh-completions
+autoload -U compinit && compinit
 # https://stackoverflow.com/a/71271754
 export ZSH_COMPDUMP=~/.cache/zsh/.zcompdump-$HOST
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,25 +112,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-# Enable custom auto completion for commands
-autoload -Uz compinit
-compinit -D
-
 # Removes duplicates of the path array
 typeset -U path
 
 # Configure Tools & Create Functions
 for file in $(find ~/.zshrc.d/ -type f); do source "$file"; done
-
-# Set Veriables
-export EDITOR="code --wait"
-
-# Create Aliases
-alias ls='exa --long --all --classify --header --git' # -laFh --git
-alias exa='exa --long --all --classify --header --git' # -laFh --git
-alias grep='grep --color=auto'
-alias trail='<<<${(F)path}'
-
-# Customize Prompt(s)
-# PROMPT='
-# %1~ %L %# '

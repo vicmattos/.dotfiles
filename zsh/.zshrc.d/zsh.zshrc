@@ -1,9 +1,13 @@
 
-# zsh-completions Caveats
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+# Set Veriables
+export EDITOR="code --wait"
 
-    chmod -R go-w '/usr/local/share/zsh'
-    autoload -Uz compinit
-    compinit
-fi
+# Create Aliases
+alias ls='exa --long --all --classify --header --git' # -laFh --git
+alias exa='exa --long --all --classify --header --git' # -laFh --git
+alias grep='grep --color=auto'
+alias trail='<<<${(F)path}'
+
+# Customize Prompt(s)
+# PROMPT='
+# %1~ %L %# '
