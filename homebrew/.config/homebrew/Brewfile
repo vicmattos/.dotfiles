@@ -1,11 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
-# Object-file caching compiler wrapper
-brew "ccache"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima", restart_service: true
 # Pack, ship and run any application as a lightweight container
@@ -28,8 +22,6 @@ brew "mas"
 brew "openssl@1.1"
 # Python version management
 brew "pyenv"
-# Make Python build faster, using the leverage of `ccache`
-brew "pyenv-ccache"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Terminal multiplexer
