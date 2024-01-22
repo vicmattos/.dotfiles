@@ -74,6 +74,9 @@ plugins=(
     git
 )
 
+# https://stackoverflow.com/a/71271754
+export ZSH_COMPDUMP=~/.cache/zsh/.zcompdump-$HOST
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
