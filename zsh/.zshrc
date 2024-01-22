@@ -124,7 +124,6 @@ alias ls='exa --long --all --classify --header --git' # -laFh --git
 alias exa='exa --long --all --classify --header --git' # -laFh --git
 alias grep='grep --color=auto'
 alias trail='<<<${(F)path}'
-alias rm=trash # Installed from node
 
 # Customize Prompt(s)
 # PROMPT='
