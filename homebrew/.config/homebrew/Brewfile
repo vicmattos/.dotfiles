@@ -12,8 +12,6 @@ brew "colima", restart_service: true
 brew "docker"
 # Isolated development environments using Docker
 brew "docker-compose"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Modern replacement for 'ls'
 brew "exa"
 # Distributed revision control system
