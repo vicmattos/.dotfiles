@@ -3,19 +3,19 @@
 echo "\n<<< Starting ZSH Setup >>>\n"
 
 # https://stackoverflow.com/a/4749368/1341838
-if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
-  echo '/usr/local/bin/zsh already exists in /etc/shells'
+if grep -Fxq '$(brew --prefix)/bin/zsh' '/etc/shells'; then
+  echo '$(brew --prefix)/bin/zsh already exists in /etc/shells'
 else
-  echo 'edit /etc/shells with /usr/local/bin/zsh (needs sudo)'
-  echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
+  echo 'edit /etc/shells with $(brew --prefix)/bin/zsh (needs sudo)'
+  echo '$(brew --prefix)/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 fi
 
 
-if [ "$SHELL" = '/usr/local/bin/zsh' ]; then
-  echo '$SHELL is already /usr/local/bin/zsh'
+if [ "$SHELL" = '$(brew --prefix)/bin/zsh' ]; then
+  echo '$SHELL is already $(brew --prefix)/bin/zsh'
 else
   echo "change login shell to zsh (needs password)"
-  chsh -s '/usr/local/bin/zsh'
+  chsh -s '$(brew --prefix)/bin/zsh'
 fi
 
 
@@ -27,7 +27,7 @@ else
   sudo ln -sfv /bin/zsh /private/var/select/sh
 
   # I'd like for this to work instead.
-  # sudo ln -sfv /usr/local/bin/zsh /private/var/select/sh
+  # sudo ln -sfv $(brew --prefix)/bin/zsh /private/var/select/sh
 fi
 
 

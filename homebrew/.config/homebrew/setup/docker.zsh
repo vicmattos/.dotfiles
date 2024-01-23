@@ -7,8 +7,8 @@ if ! brewexists docker; then
 elif ! brewexists docker-compose; then
     echo 'docker-compose not installed with homebrew. Skipping setup.'
 else
-    echo '~/.docker/cli-plugins/docker-compose linked to /usr/local/opt/docker-compose/bin/docker-compose'
+    echo '~/.docker/cli-plugins/docker-compose linked to $(brew --prefix)/opt/docker-compose/bin/docker-compose'
     # Compose is now a Docker plugin. For Docker to find this plugin, symlink it:
     mkdir -p ~/.docker/cli-plugins
-    ln -sfn /usr/local/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+    ln -sfn $(brew --prefix)/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
 fi
