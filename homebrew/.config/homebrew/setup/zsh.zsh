@@ -7,7 +7,7 @@ if grep -Fxq '$(brew --prefix)/bin/zsh' '/etc/shells'; then
   echo '$(brew --prefix)/bin/zsh already exists in /etc/shells'
 else
   echo 'edit /etc/shells with $(brew --prefix)/bin/zsh (needs sudo)'
-  echo '$(brew --prefix)/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
+  echo $(brew --prefix)/bin/zsh | sudo tee -a '/etc/shells' >/dev/null
 fi
 
 
@@ -15,7 +15,7 @@ if [ "$SHELL" = '$(brew --prefix)/bin/zsh' ]; then
   echo '$SHELL is already $(brew --prefix)/bin/zsh'
 else
   echo "change login shell to zsh (needs password)"
-  chsh -s '$(brew --prefix)/bin/zsh'
+  chsh -s $(brew --prefix)/bin/zsh
 fi
 
 
