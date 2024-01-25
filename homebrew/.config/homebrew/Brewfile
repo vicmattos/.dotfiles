@@ -1,5 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima", restart_service: true
 # Pack, ship and run any application as a lightweight container
