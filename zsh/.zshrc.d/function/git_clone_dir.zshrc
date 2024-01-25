@@ -1,5 +1,5 @@
 
-function git-clone-dir() (
+function git-clone-dir() {
 
   # Show usage if no args passed
   if [ -z "$1" ]; then
@@ -22,4 +22,4 @@ function git-clone-dir() (
   done
 
   git checkout "$branch"
-)
+}
