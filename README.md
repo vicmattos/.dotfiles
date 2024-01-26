@@ -2,9 +2,9 @@
 
 ## Install
 ```
-curl -sS https://webi.sh/brew | sh
+curl -sS https://webi.sh/brew | sh && source ~/.config/envman/PATH.env
 curl -L http://install.ohmyz.sh | sh && rm ~/.zshrc
-brew install stow && stow git zsh homebrew
+brew install stow && stow git zsh ssh homebrew
 brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 ```
 
