@@ -29,12 +29,3 @@ else
   # I'd like for this to work instead.
   # sudo ln -sfv $(brew --prefix)/bin/zsh /private/var/select/sh
 fi
-
-
-for omz_plugin in zsh-completions zsh-autosuggestions zsh-syntax-highlighting
-do
-  FOLDER=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$omz_plugin
-  if [ ! -d "$FOLDER" ] ; then
-    git clone https://github.com/zsh-users/$omz_plugin.git "$FOLDER"
-  fi
-done
