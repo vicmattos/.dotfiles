@@ -26,6 +26,8 @@ brew "pyenv"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# JavaScript toolchain manager for reproducible environments
+brew "volta"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Application launcher and productivity software
