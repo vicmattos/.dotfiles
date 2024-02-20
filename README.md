@@ -3,9 +3,8 @@
 ## Install
 ```
 curl -sS https://webi.sh/brew | sh
-curl -L http://install.ohmyz.sh | sh
 source ~/.config/envman/PATH.env && rm ~/.zshrc
-brew install stow && stow git zsh ssh homebrew
+brew install stow && stow git zsh ssh homebrew alacritty starship
 brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 ```
 
