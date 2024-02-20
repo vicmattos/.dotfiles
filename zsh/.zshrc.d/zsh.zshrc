@@ -4,6 +4,7 @@ typeset -U path
 
 # Set Veriables
 export EDITOR="code --wait"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # Create Aliases
 alias ls='eza --icons --all --git --group-directories-first -1'
