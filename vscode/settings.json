@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.external.osxExec": "Alacritty.app",
+    "terminal.integrated.fontFamily": "Hack Nerd Font"
+}
