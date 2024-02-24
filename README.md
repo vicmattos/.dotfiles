@@ -4,7 +4,7 @@
 ```
 curl -sS https://webi.sh/brew | sh
 source ~/.config/envman/PATH.env && rm ~/.zshrc
-brew install stow && stow git zsh ssh homebrew alacritty starship
+brew install stow && stow alacritty git homebrew skhd ssh starship yabai zsh
 brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 ```
 
@@ -16,3 +16,4 @@ brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 ### Specific Installs
 Those have unique ways to install (described in their folder's `README`):
 - vscode
+- yabai
