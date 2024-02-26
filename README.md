@@ -14,6 +14,5 @@ brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 - Change this repo url with `git remote set-url origin git@github.com:vicmattos/.dotfiles.git`
 
 ### Specific Installs
-Those have unique ways to install (described in their folder's `README`):
-- vscode
-- yabai
+- [vscode](vscode/README.md)
+- [yabai](yabai/README.md)
