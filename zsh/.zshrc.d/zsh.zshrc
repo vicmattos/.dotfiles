@@ -5,6 +5,7 @@ typeset -U path
 # Set Veriables
 export EDITOR="code --wait"
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
 
 # Create Aliases
 alias ls='eza --icons --all --git --group-directories-first -1'
@@ -19,12 +20,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh-completions
 if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    autoload -Uz compinit
-    compinit
+    fpath=(
+        $(brew --prefix)/share/zsh-completions
+        $fpath
+    )
 fi
-# https://stackoverflow.com/a/71271754
-export ZSH_COMPDUMP=~/.cache/zsh/.zcompdump-$HOST
+[ -d $XDG_CACHE_HOME/zsh ] || mkdir $XDG_CACHE_HOME/zsh
+autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/.zcompdump-$HOST
 
 
 # zsh-syntax-highlighting
