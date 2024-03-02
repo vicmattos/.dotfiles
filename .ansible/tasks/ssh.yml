@@ -1,0 +1,16 @@
+- name: ensure private ssh key permission restrictive
+  file:
+    path: ~/.ssh/id_ed25519
+    mode: '0400'
+
+- name: start ssh-agent and add private key
+  shell: |
+      eval "$(ssh-agent)"
+      ssh-add ~/.ssh/id_ed25519
+  changed_when: false  # return ok
+
+# - name: Set authorized key took from file
+#   authorized_key:
+#     user: "{{ ansible_facts.user_id }}"
+#     state: present
+#     key: "~/.ssh/id_ed25519"

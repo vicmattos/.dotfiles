@@ -1,0 +1,23 @@
+- name: ensure docker installed
+  homebrew:
+    name: docker
+    state: present
+
+- name: ensure docker-compose installed
+  homebrew:
+    name: docker-compose
+    state: present
+
+- name: ensure docker plugins directory exists
+  file:
+    path: "~/.docker/cli-plugins"
+    state: directory
+
+# - name: make compose a subcommand from docker
+#   shell: ln -sfn {{ brew_prefix.stdout }}/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+
+- name: link compose executable to docker plugin directory
+  file:
+    src: "{{ brew_prefix.stdout }}/opt/docker-compose/bin/docker-compose"
+    dest: "~/.docker/cli-plugins/docker-compose"
+    state: link

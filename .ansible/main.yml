@@ -1,0 +1,19 @@
+- hosts: localhost
+
+  pre_tasks:
+    - name : set brew prefix
+      shell: echo $(brew --prefix)
+      register: brew_prefix
+      changed_when: false  # return ok
+      tags: [ zsh, ssh, docker ]
+
+  tasks:
+
+    - import_tasks: tasks/zsh.yml
+      tags: zsh
+
+    - import_tasks: tasks/ssh.yml
+      tags: ssh
+      
+    - import_tasks: tasks/docker.yml
+      tags: docker
