@@ -1,5 +1,9 @@
 - hosts: localhost
 
+  vars:
+    source_dotfiles: "~/.dotfiles"
+    source_secrets: "{{ source_dotfiles }}/.secrets"
+
   pre_tasks:
     - name : set brew prefix
       shell: echo $(brew --prefix)
