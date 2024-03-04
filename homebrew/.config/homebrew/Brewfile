@@ -1,9 +1,9 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Container runtimes on MacOS (and Linux) with minimal setup
