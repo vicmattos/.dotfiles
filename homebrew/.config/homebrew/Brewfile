@@ -36,6 +36,8 @@ brew "mas"
 brew "neovim"
 # Python version management
 brew "pyenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
