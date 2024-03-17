@@ -42,6 +42,8 @@ brew "ripgrep"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
 # Terminal multiplexer
 brew "tmux"
 # JavaScript toolchain manager for reproducible environments
@@ -92,6 +94,7 @@ vscode "dracula-theme.theme-dracula"
 vscode "editorconfig.editorconfig"
 vscode "github.vscode-github-actions"
 vscode "golang.go"
+vscode "hashicorp.terraform"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
