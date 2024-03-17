@@ -90,6 +90,7 @@ cask "whatsapp"
 cask "zoom"
 mas "LastPass", id: 926036361
 vscode "a-h.templ"
+vscode "ckolkman.vscode-postgres"
 vscode "dracula-theme.theme-dracula"
 vscode "editorconfig.editorconfig"
 vscode "github.vscode-github-actions"
