@@ -11,7 +11,6 @@ stow alacritty git homebrew skhd ssh starship yabai zsh
 
 ### Specific Installs
 - [vscode](vscode/README.md)
-- [yabai](yabai/README.md)
 
 ### Cleanup
 - Change this repo url with `git remote set-url origin git@github.com:vicmattos/.dotfiles.git`
