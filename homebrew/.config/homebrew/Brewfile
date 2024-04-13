@@ -29,7 +29,7 @@ brew "go-task"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Just-In-Time Compiler (JIT) for the Lua programming language
-brew "luajit", args: ["--build-from-source"]
+brew "luajit", args: ["build-from-source"]
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
