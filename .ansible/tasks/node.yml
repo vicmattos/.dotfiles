@@ -3,5 +3,5 @@
   changed_when: false  # return ok
 
 - name: install pnpm with volta
-  shell: volta install node
+  shell: volta install pnpm
   changed_when: false  # return ok
