@@ -6,7 +6,7 @@ curl -sS https://webi.sh/brew | sh
 source ~/.config/envman/PATH.env && rm ~/.zshrc
 brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
 ansible-playbook .ansible/main.yml --ask-become-pass --ask-vault-pass
-stow alacritty git homebrew skhd ssh starship yabai zsh jq
+stow alacritty git homebrew jq ssh starship zsh
 ```
 
 ### Specific Installs
