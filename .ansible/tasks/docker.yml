@@ -1,7 +1,8 @@
-- name: ensure docker installed
-  homebrew:
-    name: docker
-    state: present
+# TODO: fatal: [localhost]: FAILED! => {"changed": false, "msg": "Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker or specify the `--cask` flag."}
+# - name: ensure docker installed
+#   homebrew:
+#     name: docker
+#     state: present
 
 - name: ensure docker-compose installed
   homebrew:
