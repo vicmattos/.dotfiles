@@ -12,6 +12,7 @@
 	c = !git commit --message
 	ca = !git commit --amend --no-edit
 	ac = !git add --all && git commit --message
+	undo = !git reset --soft HEAD^
 	l = !git log --pretty=format:'%C(blue)%h - %C(brightcyan)%cn, %C(brightgreen)%cs %C(green)(%cr) %C(white)%s %C(red)%d'
 [init]
 	defaultBranch = main
