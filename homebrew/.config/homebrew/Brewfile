@@ -77,6 +77,8 @@ cask "discord"
 cask "dropbox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Laravel and PHP development environment manager
+cask "herd"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
