@@ -1,4 +1,6 @@
 {
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
     "terminal.external.osxExec": "Alacritty.app",
