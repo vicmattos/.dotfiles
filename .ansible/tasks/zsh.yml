@@ -1,18 +1,18 @@
 - name: ensure zsh from brew is in shells
-  become: yes
+  become: true
   lineinfile:
     dest: "/etc/shells"
     line: "{{ brew_prefix.stdout }}/bin/zsh"
 
-- name: change user shell to zsh from brew
-  become: yes
-  user:
-    name: "{{ ansible_facts.user_id }}"
-    shell: "{{ brew_prefix.stdout }}/bin/zsh"
+# - name: change user shell to zsh from brew
+#   become: true
+#   user:
+#     name: "{{ ansible_facts.user_id }}"
+#     shell: "{{ brew_prefix.stdout }}/bin/zsh"
 
-- name: symlink sh to zsh
-  become: yes
-  file:
-    src: "/bin/zsh"
-    dest: "/private/var/select/sh"
-    state: link
+# - name: symlink sh to zsh
+#   become: true
+#   file:
+#     src: "/bin/zsh"
+#     dest: "/private/var/select/sh"
+#     state: link
