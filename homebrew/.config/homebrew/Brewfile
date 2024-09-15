@@ -41,8 +41,14 @@ brew "ripgrep"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Terraform version manager inspired by rbenv
-brew "tfenv"
+# OpenTofu / Terraform / Terragrunt / Atmos version manager
+brew "tenv"
+# Tool to generate documentation from Terraform modules
+brew "terraform-docs"
+# Linter for Terraform files
+brew "tflint"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
 # Terminal multiplexer
 brew "tmux"
 # JavaScript toolchain manager for reproducible environments
