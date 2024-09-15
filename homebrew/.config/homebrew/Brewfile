@@ -69,6 +69,8 @@ cask "alfred"
 cask "arc"
 # Desktop password and login vault
 cask "bitwarden"
+# Database version management tool
+cask "dbngin"
 # Voice and text chat software
 cask "discord"
 # Client for the Dropbox cloud storage service
