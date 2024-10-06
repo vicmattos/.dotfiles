@@ -6,5 +6,7 @@
     "terminal.external.osxExec": "Alacritty.app",
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "git.suggestSmartCommit": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "makefile.configureOnOpen": true,
 }
