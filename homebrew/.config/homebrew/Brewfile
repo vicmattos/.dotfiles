@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "pantsbuild/tap"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Official Amazon AWS command-line interface
@@ -61,12 +62,16 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser
 cask "arc"
+# Managed client-based VPN service to securely access AWS resources
+cask "aws-vpn-client"
 # Desktop password and login vault
 cask "bitwarden"
 # Database version management tool
@@ -79,6 +84,8 @@ cask "dropbox"
 cask "font-hack-nerd-font"
 # Laravel and PHP development environment manager
 cask "herd"
+# Fast, scalable, user-friendly build system for codebases of all sizes
+cask "pants"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
@@ -107,5 +114,6 @@ vscode "ms-python.python"
 vscode "ms-vscode.makefile-tools"
 vscode "pkief.material-icon-theme"
 vscode "samuelcolvin.jinjahtml"
+vscode "siris01.catppuccin-theme"
 vscode "tamasfe.even-better-toml"
 vscode "vscodevim.vim"
