@@ -1,5 +1,11 @@
 # vicmattos' dotfiles
 
+## Prerequisites
+```
+xcode-select --install  # developer utils with git
+softwareupdate --install-rosetta --agree-to-license  # x86_64 (amd64) translator to aarch64 (arm64)
+```
+
 ## Install
 ```
 curl -sS https://webi.sh/brew | sh
