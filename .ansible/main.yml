@@ -9,7 +9,7 @@
       shell: echo $(brew --prefix)
       register: brew_prefix
       changed_when: false  # return ok
-      tags: [ zsh, ssh, docker ]
+      tags: [ always ]
 
   tasks:
 
