@@ -1,0 +1,7 @@
+- name: install dbt-core
+  shell: pipx install dbt-core
+  changed_when: false  # return ok
+
+- name: inject dbt-snowflake in dbt-core
+  shell: pipx inject dbt-core dbt-snowflake
+  changed_when: false  # return ok

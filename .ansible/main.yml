@@ -22,5 +22,8 @@
     - import_tasks: tasks/docker.yml
       tags: docker
       
+    - import_tasks: tasks/dbt.yml
+      tags: dbt
+      
     - import_tasks: tasks/node.yml
       tags: node
