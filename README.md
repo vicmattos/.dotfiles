@@ -14,8 +14,5 @@ HOMEBREW_CASK_OPTS="--no-quarantine" brew bundle --verbose --file=./homebrew/.co
 cd .ansible && ansible-playbook main.yml
 ```
 
-### Specific Installs
-- [vscode](vscode/README.md)
-
 ### Cleanup
 - Change this repo url with `git remote set-url origin git@github.com:vicmattos/.dotfiles.git`
