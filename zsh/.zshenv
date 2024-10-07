@@ -1,2 +1,2 @@
 
-for file in $(find ~/.zshenv.d/ -type f); do source "$file"; done
+for file in $(find ~/.zshenv.d/ -type f -name "*.zshenv"); do source "$file"; done
