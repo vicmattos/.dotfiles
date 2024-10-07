@@ -1,4 +1,7 @@
 
+# Don't add command to history if has space in beginning
+setopt HIST_IGNORE_SPACE
+
 # Removes duplicates of the path array
 typeset -U path
 
