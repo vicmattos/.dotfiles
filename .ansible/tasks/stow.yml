@@ -1,0 +1,18 @@
+- stow:
+    state: present
+    package: '{{ item }}'
+    dir: '{{ source_dotfiles }}'
+  with_items:
+    - alacritty
+    - git
+    - homebrew
+    - jq
+    - ssh
+    - starship
+    - zsh
+
+- stow:
+    state: present
+    package: vscode
+    dir: '{{ source_dotfiles }}'
+    target: '"$HOME/Library/Application Support/Code/User/"'

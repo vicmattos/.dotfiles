@@ -1,7 +1,7 @@
 - hosts: localhost
 
   vars:
-    source_dotfiles: "~/.dotfiles"
+    source_dotfiles: "$HOME/.dotfiles"
     source_secrets: "{{ source_dotfiles }}/.secrets"
 
   pre_tasks:
@@ -12,6 +12,9 @@
       tags: [ always ]
 
   tasks:
+
+    - import_tasks: tasks/stow.yml
+      tags: stow
 
     - import_tasks: tasks/zsh.yml
       tags: zsh
