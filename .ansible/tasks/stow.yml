@@ -1,3 +1,4 @@
+---
 - stow:
     state: present
     package: '{{ item }}'

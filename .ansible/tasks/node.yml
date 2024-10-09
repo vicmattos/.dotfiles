@@ -1,3 +1,4 @@
+---
 - name: install node with volta
   shell: volta install node
   changed_when: false  # return ok

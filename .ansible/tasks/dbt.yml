@@ -1,3 +1,4 @@
+---
 - name: install dbt-core
   shell: pipx install dbt-core
   changed_when: false  # return ok
