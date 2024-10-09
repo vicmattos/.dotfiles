@@ -1,25 +1,25 @@
 - name: ensure .ssh directory exists.
   file:
-    dest: "~/.ssh/"
+    dest: "{{ home_env }}/.ssh/"
     mode: 0700
     state: directory
 
 - name: install ssh secret key
   copy:
-    src: "{{ source_secrets }}/ssh/id_ed25519"
-    dest: "~/.ssh/id_ed25519"
+    src: "{{ dotfiles_secrets }}/ssh/id_ed25519"
+    dest: "{{ home_env }}/.ssh/id_ed25519"
     mode: 0600
 
 - name: install ssh public key
   copy:
-    src: "{{ source_secrets }}/ssh/id_ed25519.pub"
-    dest: "~/.ssh/id_ed25519.pub"
+    src: "{{ dotfiles_secrets }}/ssh/id_ed25519.pub"
+    dest: "{{ home_env }}/.ssh/id_ed25519.pub"
     mode: 0644
 
 - name: start ssh-agent and add private key
   shell: |
       eval "$(ssh-agent)"
-      ssh-add ~/.ssh/id_ed25519
+      ssh-add {{ home_env }}/.ssh/id_ed25519
   changed_when: false  # return ok
 
 # - name: Set authorized key took from file

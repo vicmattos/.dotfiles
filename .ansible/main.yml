@@ -1,8 +1,9 @@
 - hosts: localhost
 
   vars:
-    source_dotfiles: "$HOME/.dotfiles"
-    source_secrets: "{{ source_dotfiles }}/.secrets"
+    home_env: "{{ lookup('env', 'HOME') }}"
+    dotfiles_home: "{{ home_env }}/.dotfiles"
+    dotfiles_secrets: "{{ dotfiles_home }}/.secrets"
 
   pre_tasks:
     - name : set brew prefix

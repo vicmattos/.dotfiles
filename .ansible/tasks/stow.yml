@@ -1,7 +1,7 @@
 - stow:
     state: present
     package: '{{ item }}'
-    dir: '{{ source_dotfiles }}'
+    dir: '{{ dotfiles_home }}'
   with_items:
     - alacritty
     - git
@@ -14,5 +14,5 @@
 - stow:
     state: present
     package: vscode
-    dir: '{{ source_dotfiles }}/vscode/mine'
+    dir: '{{ dotfiles_home }}/vscode/mine'
     target: '"$HOME/Library/Application Support/Code/User/"'
