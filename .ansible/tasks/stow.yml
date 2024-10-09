@@ -14,5 +14,5 @@
 - stow:
     state: present
     package: vscode
-    dir: '{{ source_dotfiles }}'
+    dir: '{{ source_dotfiles }}/vscode/mine'
     target: '"$HOME/Library/Application Support/Code/User/"'
