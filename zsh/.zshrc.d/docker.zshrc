@@ -1,1 +1,1 @@
-export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
+export DOCKER_HOST="unix://$COLIMA_HOME/docker.sock"

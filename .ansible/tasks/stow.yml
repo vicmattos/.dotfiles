@@ -17,3 +17,9 @@
     package: vscode
     dir: '{{ dotfiles_home }}/vscode/mine'
     target: '"$HOME/Library/Application Support/Code/User/"'
+
+- stow:
+    state: present
+    package: colima
+    dir: '{{ dotfiles_home }}'
+    folding: false
