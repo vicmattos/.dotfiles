@@ -21,8 +21,8 @@
     - import_tasks: tasks/zsh.yml
       tags: zsh
 
-    - import_tasks: tasks/ssh.yml
-      tags: ssh
+    # - import_tasks: tasks/ssh.yml
+    #   tags: ssh
       
     - import_tasks: tasks/docker.yml
       tags: docker
