@@ -11,7 +11,7 @@ softwareupdate --install-rosetta --agree-to-license  # x86_64 (amd64) translator
 curl -sS https://webi.sh/brew | sh
 source ~/.config/envman/PATH.env && rm ~/.zshrc
 HOMEBREW_CASK_OPTS="--no-quarantine" brew bundle --verbose --file=./homebrew/.config/homebrew/Brewfile
-cd .ansible && ansible-playbook main.yml
+(cd .ansible && ansible-playbook main.yml)
 ```
 
 ### Cleanup
