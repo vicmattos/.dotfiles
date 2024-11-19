@@ -4,6 +4,7 @@
     "terminal.external.osxExec": "Alacritty.app",
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "git.suggestSmartCommit": false,
+    "git.openRepositoryInParentFolders": "never",
 
     /**
     * Better Defaults
@@ -58,6 +59,11 @@
     // "workbench.editor.enablePreviewFromQuickOpen": false,
     // "editor.gotoLocation.multipleImplementations": "goto",
     // "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+    /**
+    * Python
+    **/
+    "python.terminal.activateEnvironment": false,
 
     /**
     * Extensions
