@@ -1,3 +1,4 @@
+tap "airbytehq/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
@@ -26,6 +27,8 @@ brew "git"
 brew "go"
 # Task is a task runner/build tool that aims to be simpler and easier to use
 brew "go-task"
+# Smarter Dockerfile linter to validate best practices
+brew "hadolint"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Just-In-Time Compiler (JIT) for the Lua programming language
@@ -34,8 +37,12 @@ brew "luajit", args: ["build-from-source"]
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Python version management
 brew "pyenv"
+# Perl-powered file rename script with many helpful built-ins
+brew "rename"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Cross-shell prompt for astronauts
@@ -62,6 +69,8 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Airbyte's command-line tool for running Airbyte locally
+brew "airbytehq/tap/abctl"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # GPU-accelerated terminal emulator
@@ -103,16 +112,17 @@ vscode "a-h.templ"
 vscode "astro-build.astro-vscode"
 vscode "dracula-theme.theme-dracula"
 vscode "editorconfig.editorconfig"
-vscode "hashicorp.terraform"
 vscode "github.vscode-github-actions"
 vscode "golang.go"
 vscode "hashicorp.terraform"
 vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
 vscode "ms-pyright.pyright"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-vscode.makefile-tools"
 vscode "pkief.material-icon-theme"
+vscode "redhat.vscode-yaml"
 vscode "samuelcolvin.jinjahtml"
 vscode "siris01.catppuccin-theme"
 vscode "tamasfe.even-better-toml"
