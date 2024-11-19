@@ -8,18 +8,20 @@
     - git
     - homebrew
     - jq
-    - ssh
     - starship
     - zsh
+
+- stow:
+    state: present
+    package: '{{ item }}'
+    dir: '{{ dotfiles_home }}'
+    folding: false
+  with_items:
+    - colima
+    - ssh
 
 - stow:
     state: present
     package: vscode
     dir: '{{ dotfiles_home }}/vscode/mine'
     target: '"$HOME/Library/Application Support/Code/User/"'
-
-- stow:
-    state: present
-    package: colima
-    dir: '{{ dotfiles_home }}'
-    folding: false
