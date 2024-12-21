@@ -16,6 +16,7 @@
 	ac = !git add --all && git commit --message
 	acapf = !git add --all && git ca && git pf
 	undo = !git reset --soft HEAD^
+	ignore = !git rm --cached
 	l = !git log --pretty=format:'%C(blue)%h - %C(brightcyan)%cn, %C(brightgreen)%cs %C(green)(%cr) %C(white)%s %C(red)%d'
 [init]
 	defaultBranch = main
