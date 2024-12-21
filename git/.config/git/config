@@ -12,7 +12,8 @@
 	bd = !git branch -d
 	bdf = !git branch -D
 	c = !git commit --message
-	ca = !git commit --amend --no-edit
+	ca = !git commit --amend
+	cane = !git commit --amend --no-edit
 	ac = !git add --all && git commit --message
 	acapf = !git add --all && git ca && git pf
 	undo = !git reset --soft HEAD^
