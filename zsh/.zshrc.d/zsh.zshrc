@@ -25,6 +25,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 if type brew &>/dev/null; then
     fpath=(
         $(brew --prefix)/share/zsh-completions
+        $(brew --prefix)/share/zsh/site-functions
         $fpath
     )
 fi
